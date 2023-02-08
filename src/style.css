@@ -3,3 +3,55 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+section {
+  margin: 0 auto;
+  padding: 12px;
+  width: 70%;
+  justify-content: space-between;
+  gap: 10%;
+  display: flex;
+}
+
+header {
+  margin: 25px;
+}
+
+.scores-title {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.all-scores {
+  flex-basis: 38%;
+}
+
+.table {
+  border-collapse: collapse;
+  margin-top: 30px;
+  width: 100%;
+  border: 1.8px solid black;
+  font-size: 1.2rem;
+}
+
+td {
+  padding: 6px 13px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  gap: 30px;
+}
+
+input {
+  font-size: 1.2rem;
+  width: 100%;
+}
