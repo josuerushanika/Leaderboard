@@ -1,5 +1,5 @@
 import './style.css';
-import { getScore, PostScore } from './modules/MethodsAPI.js';
+import { getScore, postScore } from './modules/MethodsAPI.js';
 
 const submit = document.querySelector('#submit');
 const refreshbtn = document.querySelector('#refresh');
@@ -15,7 +15,7 @@ submit.addEventListener('click', (e) => {
   if (newPlayer.user === '' || newPlayer.score === '') return;
   e.preventDefault();
 
-  PostScore(newPlayer);
+  postScore(newPlayer);
   nameScore.value = '';
   score.value = '';
 });
