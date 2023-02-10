@@ -13,10 +13,11 @@ export const PostScore = async (newPlayer) => {
     },
     body: JSON.stringify({ user: newPlayer.user, score: newPlayer.score }),
   });
+  console.log('Getpost', post);
 
-  if (post.status !== 200) {
-    throw new Error('You can POST your data here.');
-  }
+  //   if (post.status !== 200) {
+  //     throw new Error('You can POST your data here.');
+  //   }
   const response = await post.json();
   return response;
 };
@@ -29,8 +30,8 @@ export const getScore = async () => {
     // }
     const response = await get.json();
     console.log('myResponse', response.result);
-    // const sortedGameData = response.result.sort((a, b) => b.score - a.score);
-    htmldisplay(response.result);
+    const sortedGameData = response.result.sort((a, b) => b.score - a.score);
+    htmldisplay(sortedGameData);
   } catch (err) {
     console.log(err.message);
   }

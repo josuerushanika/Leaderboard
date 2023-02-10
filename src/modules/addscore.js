@@ -1,30 +1,44 @@
 // import htmldisplay from './htmldisplay.js';
 import { PostScore } from './MethodsAPI.js';
+// import { getScore } from './MethodsAPI.js';
 
 const nameScore = document.querySelector('#name');
 const score = document.querySelector('#score');
 export const form = document.querySelector('form');
+const submit = document.querySelector('#submit');
 
-class CreateScore {
-  constructor(yourName, yourScore) {
-    this.yourName = yourName;
-    this.yourScore = yourScore;
-  }
+submit.addEventListener('click', (e) => {
+  console.log('Testing');
 
-  static clear() {
-    nameScore.value = '';
-    score.value = '';
-  }
-}
+  const newPlayer = {
+    user: nameScore.value,
+    score: score.value,
+  };
+  event.preventDefault();
+  PostScore(newPlayer);
+});
 
-const addNewScore = () => {
-  if (nameScore.value && score.value >= 0) {
-    const newScore = new CreateScore(nameScore.value, score.value);
-    // console.log('myGame', newScore);
-    PostScore(newScore);
-    // htmldisplay(newScore);
-    CreateScore.clear();
-  }
-};
+// class CreateScore {
+//   constructor(yourName, yourScore) {
+//     this.yourName = yourName;
+//     this.yourScore = yourScore;
+//   }
 
-export default addNewScore;
+//   static clear() {
+//     nameScore.value = '';
+//     score.value = '';
+//   }
+// }
+
+// const addNewScore = () => {
+//   console.log('mynamscore', nameScore, score);
+//   if (nameScore.value && score.value >= 0) {
+//     const newScore = new CreateScore(nameScore.value, score.value);
+
+//     PostScore(newScore);
+//     // htmldisplay(newScore);
+//     CreateScore.clear();
+//   }
+// };
+
+//export default addNewScore;
