@@ -15,9 +15,6 @@ export const PostScore = async (newPlayer) => {
   });
   console.log('Getpost', post);
 
-  //   if (post.status !== 200) {
-  //     throw new Error('You can POST your data here.');
-  //   }
   const response = await post.json();
   return response;
 };
@@ -25,9 +22,6 @@ export const PostScore = async (newPlayer) => {
 export const getScore = async () => {
   try {
     const get = await fetch(baseUrl);
-    // if (get.status !== 200) {
-    //   throw new Error('You can GET your data here');
-    // }
     const response = await get.json();
     console.log('myResponse', response.result);
     const sortedGameData = response.result.sort((a, b) => b.score - a.score);

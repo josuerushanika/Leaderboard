@@ -1,6 +1,11 @@
 import './style.css';
-import addNewScore, { form } from './modules/addscore.js';
 import { getScore } from './modules/MethodsAPI.js';
+
+const refreshbtn = document.querySelector('#refresh');
+
+refreshbtn.addEventListener('click', () => {
+  window.location.reload();
+});
 
 // form.addEventListener('submit', (event) => {
 //   event.preventDefault();

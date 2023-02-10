@@ -4,23 +4,22 @@ import { PostScore } from './MethodsAPI.js';
 
 const nameScore = document.querySelector('#name');
 const score = document.querySelector('#score');
-export const form = document.querySelector('form');
+// export const form = document.querySelector('form');
 const submit = document.querySelector('#submit');
 
 submit.addEventListener('click', (e) => {
-  console.log('Testing');
+  // console.log('Testing');
 
   const newPlayer = {
     user: nameScore.value,
     score: score.value,
   };
-  event.preventDefault();
+  e.preventDefault();
   if (nameScore.value && score.value >= 0) {
     PostScore(newPlayer);
-    nameScore.value = ''; 
+    nameScore.value = '';
     score.value = '';
   }
-
 });
 
 // class CreateScore {
@@ -46,4 +45,4 @@ submit.addEventListener('click', (e) => {
 //   }
 // };
 
-//export default addNewScore;
+// export default addNewScore;
