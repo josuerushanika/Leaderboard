@@ -58,14 +58,13 @@ form {
 }
 
 button {
-  padding: 5px 12px;
-  background-color: rgb(15, 107, 150);
+  padding: 20px 17px;
+  background-color: green;
   color: white;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   border: none;
-  padding: 15px 32px;
   margin: 4px 2px;
   display: inline-block;
 }
@@ -73,11 +72,24 @@ button {
 input {
   font-size: 1.2rem;
   width: 100%;
+  margin: 12px 0;
+  border: 2px solid green;
+  padding: 13px 18px;
+  font-size: 14px;
+}
+
+
+h4{
+  text-align: center;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+  
 }
 
 footer {
   background-color: #ddd;
-  height: 30px;
+  height: 40px;
   width: 100%;
   position: fixed;
   bottom: 0;
