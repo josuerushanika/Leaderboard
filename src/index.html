@@ -15,7 +15,7 @@
         <div class="all-scores">
             <div class="scores-title">
                 <h2>Recent Scores</h2>
-                <button>Refresh</button>
+                <button id="refresh">Refresh</button>
             </div>
             <table class="table"></table>
 
@@ -24,9 +24,9 @@
 
       <form>
         <h2>Add Your Score</h2>
-        <input type="text" name="name" id="name" placeholder="Your name">
-        <input type="text" name="score" id="score" placeholder="Your score">
-        <button type="submit">Submit</button>
+        <input type="text" name="name" id="name" placeholder="Your name" required>
+        <input type="text" name="score" id="score" placeholder="Your score" required>
+        <button type="submit" id = "submit">Submit</button>
      </form>
 </section>
     <footer></footer>
