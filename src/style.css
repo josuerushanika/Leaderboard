@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -22,6 +24,10 @@ header {
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 .all-scores {
@@ -53,6 +59,15 @@ form {
 
 button {
   padding: 5px 12px;
+  background-color: rgb(15, 107, 150);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  display: inline-block;
 }
 
 input {
