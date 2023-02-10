@@ -2,7 +2,7 @@ import htmldisplay from './htmldisplay.js';
 
 // const bse_url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
-const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/U3TWwe12M2uodMhrlkNp/scores';
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ygzvsig2RDHlS9A3YwuH/scores';
 
 export const PostScore = async (newPlayer) => {
   console.log('myPlayer', newPlayer);
@@ -23,10 +23,10 @@ export const getScore = async () => {
   try {
     const get = await fetch(baseUrl);
     const response = await get.json();
-    console.log('myResponse', response.result);
+    // console.log('myResponse', response.result);
     const sortedGameData = response.result.sort((a, b) => b.score - a.score);
     htmldisplay(sortedGameData);
   } catch (err) {
-    console.log(err.message);
+    // console.log(err.message);
   }
 };

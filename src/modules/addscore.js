@@ -1,26 +1,8 @@
 // import htmldisplay from './htmldisplay.js';
-import { PostScore } from './MethodsAPI.js';
+// import { defaults } from 'lodash';
 // import { getScore } from './MethodsAPI.js';
 
-const nameScore = document.querySelector('#name');
-const score = document.querySelector('#score');
-// export const form = document.querySelector('form');
-const submit = document.querySelector('#submit');
-
-submit.addEventListener('click', (e) => {
-  // console.log('Testing');
-
-  const newPlayer = {
-    user: nameScore.value,
-    score: score.value,
-  };
-  e.preventDefault();
-  if (nameScore.value && score.value >= 0) {
-    PostScore(newPlayer);
-    nameScore.value = '';
-    score.value = '';
-  }
-});
+// export default addScore;
 
 // class CreateScore {
 //   constructor(yourName, yourScore) {
