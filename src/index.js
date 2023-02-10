@@ -9,4 +9,5 @@ form.addEventListener('submit', (event) => {
 
 window.onload = () => {
   getScore();
+  
 };
