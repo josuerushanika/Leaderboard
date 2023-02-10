@@ -15,7 +15,12 @@ submit.addEventListener('click', (e) => {
     score: score.value,
   };
   event.preventDefault();
-  PostScore(newPlayer);
+  if (nameScore.value && score.value >= 0) {
+    PostScore(newPlayer);
+    nameScore.value = ''; 
+    score.value = '';
+  }
+
 });
 
 // class CreateScore {
