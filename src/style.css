@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  margin: 0 auto;
+  padding: 12px;
+  width: 70%;
+  justify-content: space-between;
+  gap: 10%;
+  display: flex;
+}
+
+header {
+  margin: 25px;
+}
+
+.scores-title {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.all-scores {
+  flex-basis: 38%;
+}
+
+.table {
+  border-collapse: collapse;
+  margin-top: 30px;
+  width: 100%;
+  border: 1.8px solid black;
+  font-size: 1.2rem;
+}
+
+td {
+  padding: 6px 13px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  gap: 30px;
+}
+
+button {
+  padding: 20px 17px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  margin: 4px 2px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  margin: 12px 0;
+  border: 2px solid green;
+  padding: 13px 18px;
+  font-size: 14px;
+}
+
+h4 {
+  text-align: center;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #ddd;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
